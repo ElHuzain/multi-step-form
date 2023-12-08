@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: 'Ubuntu', arial;
+}
+
+:root {
+    --primary-1: hsl(213, 96%, 18%);
+    --primary-2: hsl(243, 100%, 62%);
+    --primary-3: hsl(228, 100%, 84%);
+    --primary-4: hsl(206, 94%, 87%);
+    --primary-5: hsl(354, 84%, 57%);
+
+    --secondary-1: hsl(231, 11%, 63%);
+    --secondary-2: hsl(229, 24%, 87%);
+    --secondary-3: hsl(217, 100%, 97%);
+    --secondary-4: hsl(231, 100%, 99%);
+    --secondary-5: hsl(0, 0%, 100%);
+}

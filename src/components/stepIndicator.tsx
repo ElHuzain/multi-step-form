@@ -14,12 +14,12 @@ const StepIndicator = () => {
 
   return (
     <>
-      <div className="hidden md:block bg-[url('images/bg-sidebar-desktop.svg')] h-full w-[274px] pt-10 px-8">
+      <div className="hidden md:block pc-bg h-full w-[274px] pt-10 px-8">
         <div className="flex md:flex-col gap-8">
           {Steps}
         </div>
       </div>
-      <div className="bg-[url('images/bg-sidebar-mobile.svg')] z-[-1] bg-cover absolute flex justify-center top-0 md:hidden h-[172px] w-screen left-0 pt-10 px-8">
+      <div className="mobile-bg z-[-1] bg-cover absolute flex justify-center top-0 md:hidden h-[172px] w-screen left-0 pt-10 px-8">
         <div className="flex md:flex-col gap-8">
           {Steps}
         </div>

@@ -9,7 +9,7 @@ const RadioButton = () => {
     const TextStyle = "font-[600] text-sm cursor-pointer text-secondary1";
     const SelectedTextStyle = "font-[600] text-sm cursor-default text-primary1";
 
-    const RadioButtonStyle = `absolute w-[15px] transition-all ${planType === 'monthly' ? "right-auto left-1" : "right-1 left-auto"} w-fit aspect-square bg-secondary4 rounded-full`;
+    const RadioButtonStyle = `absolute w-[15px] transition-all ${planType === 'monthly' ? "right-auto left-1" : "right-1 left-auto"} aspect-square bg-secondary4 rounded-full`;
     return (
         <div className="w-full rounded-xl py-8 justify-center flex gap-5 items-center bg-secondary4 h-12">
             <h1 onClick={() => { planType === 'monthly' ? "" : dispatcher(UpdatePlanType()) }} className={planType === 'monthly' ? SelectedTextStyle : TextStyle}>Monthly</h1>

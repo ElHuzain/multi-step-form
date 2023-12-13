@@ -8,6 +8,14 @@
     font-family: 'Ubuntu', arial;
 }
 
+.pc-bg {
+    background-image: url('images/bg-sidebar-desktop.svg');
+}
+
+.mobile-bg {
+    background-image: url('./images/bg-sidebar-mobile.svg');
+}
+
 :root {
     --primary-1: hsl(213, 96%, 18%);
     --primary-2: hsl(243, 100%, 62%);

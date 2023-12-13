@@ -34,13 +34,34 @@ const FormContainer = (props: Props) => {
     }
   }
 
+  const getTitle = () => {
+    switch(stepper) {
+      case 0: return {
+        title: "Peronsal info",
+        description: "Please provide your name, email address, and phone number.",
+      };
+      case 1: return {
+        title: "Select your plan",
+        description: "You have the option of monthly or yearly billing.",
+      };
+      case 2: return {
+        title: "Pick add-ons",
+        description: "Add-ons help enhance your gaming experience.",
+      };
+      case 3: return {
+        title: "Finishing up",
+        description: "Double-check everything looks OK before comfirming.",
+      };
+    }
+  }
+
   return (
-    <div className="py-4 w-full md:max-w-[450px] space-y-9 pt-4">
+    <div className="py-4 w-full md:w-[450px] space-y-9 pt-4">
       <div>
         {
           stepper != 4 && <>
-            <h1 className="text-[2rem] font-bold text-primary1">Personal info</h1>
-            <p className="text-secondary1">Please provide your name, email address, and phone number.</p>
+            <h1 className="text-[2rem] font-bold text-primary1">{getTitle()?.title}</h1>
+            <p className="text-secondary1">{getTitle()?.description}</p>
           </>
         }
       </div>

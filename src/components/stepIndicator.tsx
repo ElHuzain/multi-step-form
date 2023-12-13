@@ -19,7 +19,7 @@ const StepIndicator = () => {
           {Steps}
         </div>
       </div>
-      <div className="bg-[url('images/bg-sidebar-mobile.svg')] z-[-1] bg-cover absolute flex justify-center top-0 md:hidden h-[172px] w-screen left-0 pt-10 px-8">
+      <div className="bg-[url('/images/bg-sidebar-mobile.svg')] z-[-1] bg-cover absolute flex justify-center top-0 md:hidden h-[172px] w-screen left-0 pt-10 px-8">
         <div className="flex md:flex-col gap-8">
           {Steps}
         </div>

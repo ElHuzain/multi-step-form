@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      $bgs: path.resolve(__dirname, "./public/images/bg-sidebar-desktop.svg")
     },
   },
 })

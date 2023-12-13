@@ -1,11 +1,3 @@
-type Data = {
-    name: string,
-    value: string,
-    error: string
-    focus: boolean,
-    touched: boolean,
-}
-
 type Props = {
     name: string,
     placeholder: string,

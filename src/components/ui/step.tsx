@@ -7,7 +7,7 @@ type Props = {
 const Step = (props: Props) => {
   const { number, name, selected = false } = props;
 
-  const CircleStyle = 'rounded-full w-[33px] aspect-square h-fit flex flex-col justify-center text-center border-[1px] border-secondary1"';
+  const CircleStyle = 'rounded-full transition-[background] w-[33px] aspect-square h-fit flex flex-col justify-center text-center border-[1px] border-secondary1"';
   const SelectedCircle = `${CircleStyle} bg-primary4`;
 
   const IndicatorNumberStyle = "m-auto text-secondary4 font-bold leading-[1px]"

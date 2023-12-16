@@ -1,9 +1,9 @@
 import { useValidateEmail, useValidateName, useValidatePhoneNumber } from "@/hooks/useValidate";
 
 // Page Navigation
-export const SetPageReducer = (state: any, payload: number) => { return { ...state, stepper: payload } };
-export const PreviousPageReducer = (state: any) => { return { ...state, stepper: state.stepper - 1 } };
-export const NextPageReducer = (state: any) => { return { ...state, stepper: state.stepper + 1 } };
+export const SetPageReducer = (state: any, payload: number) => { return { ...state, stepper: payload,  } };
+export const PreviousPageReducer = (state: any) => { return { ...state, stepper: state.stepper - 1, swipe: 'previous' } };
+export const NextPageReducer = (state: any) => { return { ...state, stepper: state.stepper + 1, swipe: 'next' } };
 
 // Select addon
 export const SelectAddonReducer = (state: any, payload: any) => {

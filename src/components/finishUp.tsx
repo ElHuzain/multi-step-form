@@ -1,13 +1,14 @@
 // Hooks
 import useCalculateFinalPrice from "@/hooks/useCalculateFinalPrice";
 import useCalculatePrice from "@/hooks/useCalculatePrice";
+import AnimatedContainer from "./ui/animatedcontainer";
 
 const FinishUp = () => {
   const data = useCalculateFinalPrice();
   const { selectedPlan, selectedAddons, planType, finalPrice } = data;
 
   return (
-    <div className="">
+    <AnimatedContainer>
       <div className="rounded-xl px-6 py-4 bg-secondary4 space-y-4">
         <div className="flex justify-between items-center">
           <h1 className="font-bold text-primary1">
@@ -29,7 +30,7 @@ const FinishUp = () => {
         <h1 className="text-sm text-secondary1">Total (per month)</h1>
         <h1 className="font-bold text-primary1">+${finalPrice}/mo</h1>
       </div>
-    </div>
+    </AnimatedContainer>
   )
 }
 

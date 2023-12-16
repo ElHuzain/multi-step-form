@@ -25,7 +25,8 @@ type StateType = {
     },
     planType: string,
     addons: addonType[],
-    stepper: number
+    stepper: number,
+    swipe: string
 }
 
 export type ActionType = {
@@ -55,7 +56,7 @@ export const init_state: StateType = {
             error: "",
         },
     ],
-    
+
     planType: 'yearly',
     plan: {
         selected: 'arcade',
@@ -94,5 +95,6 @@ export const init_state: StateType = {
             selected: false
         },
     ],
-    stepper: 0
+    stepper: 0,
+    swipe: 'next'
 }

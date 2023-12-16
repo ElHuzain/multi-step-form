@@ -37,7 +37,7 @@ const FormContainer = (props: Props) => {
   const getTitle = () => {
     switch(stepper) {
       case 0: return {
-        title: "Peronsal info",
+        title: "Personal info",
         description: "Please provide your name, email address, and phone number.",
       };
       case 1: return {

@@ -32,7 +32,7 @@ const CheckBox = (props: Props) => {
                     </div>
                 </div>
                 {/* <input checked={selected} className="" type="checkbox" /> */}
-                <h1 className="font-semibold text-primary1 leading-[24px]">{name}<br /><span className="text-sm font-[400] text-secondary1" >{feature}</span></h1>
+                <h2 className="font-semibold text-primary1 leading-[24px]">{name}<br /><span className="text-sm font-[400] text-secondary1" >{feature}</span></h2>
             </div>
             <span className="text-primary2 text-sm">+${price}/mo</span>
         </div>

@@ -16,13 +16,13 @@ const Step = (props: Props) => {
   return (
     <div className="flex gap-4">
       <div className={selected ? SelectedCircle : CircleStyle}>
-        <h1 className={selected ? SelectedIndicatorNumberStyle : IndicatorNumberStyle}>{number}</h1>
+        <span className={selected ? SelectedIndicatorNumberStyle : IndicatorNumberStyle}>{number}</span>
       </div>
       <div className="hidden md:block">
-      <h1 className="text-primary3 text-xs font-bold">
+      <span className="text-primary3 text-xs font-bold">
         STEP {number}<br />
         <span className="text-secondary4 absolute text-sm tracking-wider">{name}</span>
-      </h1>
+      </span>
       </div>
     </div>
   )

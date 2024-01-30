@@ -21,11 +21,13 @@ const PersonalForm = (props: Props) => {
           validator={validator}
           name="Email Address"
           placeholder="a.huzain98@gmail.com"
-        />
+          isEmail={true}
+          />
         <Input
           validator={validator}
           name="Phone Number"
           placeholder="+20 112679 8092"
+          isPhone={true}
         />
       </div>
 

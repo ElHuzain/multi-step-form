@@ -18,8 +18,8 @@ const Select = (props: Props) => {
 
     return (
         <div onClick={() => dispatcher(SelectPlan(name.toLowerCase()))} className={selected ? SelectedSelectStyle : SelectStyle}>
-            <img className="w-[40px]" src={`./images/icon-${icon}.svg`} />
-            <h1 className="font-semibold text-primary1 leading-[20px] mr-auto">{name} <br /><span className="text-secondary1 font-[400] text-sm">${price}/mo</span></h1>
+            <img aria-hidden='true' alt='selection icon' className="w-[40px]" src={`./images/icon-${icon}.svg`} />
+            <h2 className="font-semibold text-primary1 leading-[20px] mr-auto">{name} <br /><span className="text-secondary1 font-[400] text-sm">${price}/mo</span></h2>
         </div>
     )
 }
